@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/coop-store-core/coop-core-model/coop-core-model.iml" filepath="$PROJECT_DIR$/coop-store-core/coop-core-model/coop-core-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coop-store-provider/coop-provider-product/coop-provider-product.iml" filepath="$PROJECT_DIR$/coop-store-provider/coop-provider-product/coop-provider-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coop-store-core/coop-store-core.iml" filepath="$PROJECT_DIR$/coop-store-core/coop-store-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coop-store-eureka/coop-store-eureka.iml" filepath="$PROJECT_DIR$/coop-store-eureka/coop-store-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coop-store-provider/coop-store-provider.iml" filepath="$PROJECT_DIR$/coop-store-provider/coop-store-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-coopstore.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-coopstore.iml" />
+    </modules>
+  </component>
+</project>

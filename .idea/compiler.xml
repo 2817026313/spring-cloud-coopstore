@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="coop-store-provider" />
+        <module name="coop-core-model" />
+        <module name="coop-provider-product" />
+        <module name="coop-store-eureka" />
+        <module name="coop-store-core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coop-core-model" target="1.7" />
+      <module name="coop-provider-product" target="1.8" />
+      <module name="coop-store-core" target="1.5" />
+      <module name="coop-store-eureka" target="1.8" />
+      <module name="coop-store-provider" target="1.5" />
+      <module name="spring-cloud-coopstore" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coop-provider-product" options="-parameters" />
+      <module name="coop-store-eureka" options="-parameters" />
+    </option>
+  </component>
+</project>
