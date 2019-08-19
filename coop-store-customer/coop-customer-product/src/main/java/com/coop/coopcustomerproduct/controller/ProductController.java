@@ -13,29 +13,26 @@ import java.util.List;
 @RequestMapping("/customer")
 public class ProductController {
 
-    public static final String PRODUCT_GET_URL = "http://localhost:4398/product/get/";
-    public static final String PRODUCT_LIST_URL="http://localhost:4398/product/list/";
-    public static final String PRODUCT_ADD_URL = "http://localhost:4398/product/add/";
+    public static final String COOP_PROVIDER_PRODUCT = "COOP-PROVIDER-PRODUCT";
 
     @Autowired
     private RestTemplate restTemplate;
 
-
     @RequestMapping(value = "/product/get/{id}",produces = "application/json")
     public Object getProduct(@PathVariable("id") int id) {
-        Product product = restTemplate.getForObject(PRODUCT_GET_URL + id, Product.class);
+        Product product = restTemplate.getForObject("http://"+COOP_PROVIDER_PRODUCT+"/product/get/" + id, Product.class);
         return  product;
     }
 
     @RequestMapping(value = "/product/list", produces = "application/json")
     public  Object listProduct() {
-        List<Product> list = restTemplate.getForObject(PRODUCT_LIST_URL, List.class);
+        List<Product> list = restTemplate.getForObject("http://"+COOP_PROVIDER_PRODUCT+"/product/list/", List.class);
         return  list;
     }
 
     @RequestMapping("/product/add")
-    public Object addPorduct(Product product) {
-        Boolean result = restTemplate.postForObject(PRODUCT_ADD_URL, product, Boolean.class);
+    public Object addProduct(Product product) {
+        Boolean result = restTemplate.postForObject("http://"+COOP_PROVIDER_PRODUCT+"/product/add/", product, Boolean.class);
         return  result;
     }
 }

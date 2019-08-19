@@ -10,6 +10,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:4399/eureka/
   instance:
-    prefer-ip-address: true # 当其它服务获取地址时提供ip而不是hostname
-    #ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找
+    prefer-ip-address: true # # 褰撳叾瀹冩湇鍔¤幏鍙栧湴鍧�鏃舵彁渚沬p鑰屼笉鏄痟ostname
+    #ip-address: 127.0.0.1 # # 褰撳叾瀹冩湇鍔¤幏鍙栧湴鍧�鏃舵彁渚沬p鑰屼笉鏄痟ostname
 
