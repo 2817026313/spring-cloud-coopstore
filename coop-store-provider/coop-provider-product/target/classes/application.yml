@@ -1,0 +1,25 @@
+server:
+  port: 4398
+mybatis:
+  mapper-locations: # 所有的mapper映射文件
+    - classpath:mapping/*.xml
+
+spring:
+  application:
+    name: coop-provider-product
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver # 配置MySQL的驱动程序类
+    url: jdbc:mysql://192.168.2.27:33065/springcloud?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+    username: root # 数据库用户名
+    password: 123456
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:4399/eureka/
+
+
+logging:
+  level:
+    com.coop.provider.produce.modular.mapper: debug

@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: coop-customer-product
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:4399/eureka/
+  instance:
+    prefer-ip-address: true # # 当其它服务获取地址时提供ip而不是hostname
+    #ip-address: 127.0.0.1 # # 当其它服务获取地址时提供ip而不是hostname
+
